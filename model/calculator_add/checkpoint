@@ -1,0 +1,2 @@
+model_checkpoint_path: "c:\\MyProject\\flask\\model\\calculator_add\\model-1000"
+all_model_checkpoint_paths: "c:\\MyProject\\flask\\model\\calculator_add\\model-1000"
