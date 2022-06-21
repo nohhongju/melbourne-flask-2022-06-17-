@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <img src="{{url_for('static', filename='') }}">
+    <img src="{{url_for('static', filename='') }}">
+ <!--# avg_temp, min_temp, max_temp, rain_fall
+    - 평균 온도: 10
+    - 최저 온도: -5
+    - 최고 온도: 20
+    - 강수량: 0.8
+    예측된 배추 가격: 5946원
+    -->
+    <form action="/cabbage" method="POST">
+      평균 온도:<br>
+      <input type="text" name="avg_temp" value="10">
+      <br>
+      최저 온도:<br>
+      <input type="text" name="min_temp" value="-5">
+      <br>
+      최고 온도:<br>
+      <input type="text" name="max_temp" value="20">
+      <br>
+      강수량:<br>
+      <input type="text" name="rain_fall" value="0.8">
+      <br>
+
+        <br>
+      <input type="submit" value="Submit">
+    </form>
+    {%  if result %}
+    <p>결과 : {{result}}</p>
+    {% endif %}
+
+</body></html>
